@@ -48,6 +48,7 @@ Fiecare culoare este reprezentata de o cifa din intervalul 1-4.
 **Exemplu:** 
 
 [
+
 	1 => 6 
 
 	2 => 3
@@ -72,6 +73,7 @@ Avem 6 bile de culoarea 1, 2 bile de culoarea 2, 1 bila de culoarea 3 si 6 bile 
 In exemplul nostru, la prima iteratie noua harta de culori va fi: 
 
 [
+
 	2 => 3	
 
 	1 => 3 	
