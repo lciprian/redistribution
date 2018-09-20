@@ -1,5 +1,5 @@
 # Enunt Problema
----
+
 Sa se dezvolte o aplicatie care rezolva urmatoarea problema:
 
 **1.** Se dau bile de n culori (pentru a nu complica prea mult n este limitat la 10). Se va prelua de la tastatura n. In total sunt n x n bile (n la patrat).  
@@ -28,26 +28,36 @@ _Nota: e posibil ca un algoritm general care sa functioneze pe orice distributie
 *   codul sursa rezultat este incarcat intr-un repository pe Git (in README sa fie descris algoritmul)
 
 # Descrierea algoritmului
----
 
 **1.** Programul genereaza o matrice de bile de dimensiune n x n. Bilele vor avea n culori. Fiecarei culori ii corespunde minim o bila.
+
 Exemplu de matrice 4 x 4, cu 4 culori, generata aleator:
 
 | 1 | 1 | 4 | 2 |
+
 | 1 | 1 | 2 | 1 |
+
 | 3 | 4 | 4 | 4 |
+
 | 1 | 4 | 4 | 2 |
 
 Fiecare culoare este reprezentata de o cifa din intervalul 1-4.
 
 **2.** Se genereaza o harta ce contine distributia culorilor:
+
 **Exemplu:** 
+
 [
 	1 => 6 
+
 	2 => 3
+
 	3 => 1
+
 	4 => 6
+
 ]
+
 Avem 6 bile de culoarea 1, 2 bile de culoarea 2, 1 bila de culoarea 3 si 6 bile de culoarea 4.
 
 **3.** Se generaza o noua matrice care este populata de bilele din array-ul ce contine distributia culorilor dupa cum urmeaza:
@@ -60,16 +70,24 @@ Avem 6 bile de culoarea 1, 2 bile de culoarea 2, 1 bila de culoarea 3 si 6 bile 
 * se reiau pasii de mai sus 
 
 In exemplul nostru, la prima iteratie noua harta de culori va fi: 
+
 [
 	2 => 3	
+
 	1 => 3 	
+
 	4 => 6
+
 ]
 
 In final vom avea o matrice ordonata astfel incat pe oricare rand sa fie maxim 2 culori.
+
 In exemplul nostru:
 
 | 3 | 1 | 1 | 1 |
+
 | 2 | 2 | 2 | 4 |
+
 | 1 | 1 | 1 | 4 |
+
 | 4 | 4 | 4 | 4 |
